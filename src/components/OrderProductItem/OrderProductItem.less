@@ -1,0 +1,162 @@
+.item {
+  .product-info-layout {
+    display: flex;
+    flex-direction: row;
+
+    .product-image-layout {
+      width: 180px;
+      height: 180px;
+      position: relative;
+
+      .product-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+      }
+
+      .send-type {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 78px;
+        line-height: 34px;
+        text-align: center;
+        font-size: 22px;
+        height: 34px;
+        color: white;
+        border-bottom-right-radius: 10px;
+        background: rgba(255, 152, 20, 1);
+      }
+    }
+
+    .product-right-content {
+      display: flex;
+      margin-left: 30px;
+      flex-direction: column;
+      flex: 1;
+
+      .line-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .product-name {
+          font-size: 28px;
+          flex: 1;
+          padding-right: 30px;
+          font-weight: 500;
+          color: #333;
+          display: -webkit-box;
+          word-break: break-all;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .price-layout {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+
+          .left-layout {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+            .price-wrapper {
+              display: inline-block;
+
+              .red-color {
+                color: #ff6400;
+                font-weight: bold;
+              }
+            }
+
+            .bao-price {
+              font-size: 28px;
+              color: #ff6400;
+              font-weight: bold;
+            }
+
+            .meibao-price {
+              margin-left: 10px;
+              width: 58px;
+              height: 28px;
+            }
+
+            .market-price {
+              margin-left: 10px;
+              text-decoration: line-through;
+              font-size: 20px;
+              font-weight: 400;
+              padding-top: 6px;
+              color: rgba(153, 153, 153, 1);
+            }
+
+            .sepcial-price {
+              margin-left: 10px;
+              width: 64px;
+              height: 36px;
+              border-top-left-radius: 0px;
+              border-top-right-radius: 30px;
+              border-bottom-left-radius: 30px;
+              border-bottom-right-radius: 30px;
+              line-height: 36px;
+              text-align: center;
+              font-size: 24px;
+              font-weight: 400;
+              color: rgba(255, 233, 131, 1);
+              background: rgba(28, 28, 28, 1);
+            }
+          }
+        }
+      }
+
+      .line-2 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-items: center;
+        justify-content: space-between;
+
+        .spec {
+          font-size: 26px;
+          color: #999;
+        }
+
+        .product-count {
+          font-size: 26px;
+          font-weight: 400;
+          color: #999;
+        }
+      }
+
+      .line-3 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 13px;
+        color: rgba(255, 100, 0, 1);
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  .emark-layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    align-items: center;
+    .remark-text {
+      font-size: 26px;
+      color: #333;
+    }
+    .remark-input {
+      flex: 1;
+      font-size: 24px;
+      color: #999;
+    }
+  }
+}

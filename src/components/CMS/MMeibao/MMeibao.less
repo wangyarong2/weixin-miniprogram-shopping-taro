@@ -1,0 +1,169 @@
+.commondity-container{
+    // display: flex;
+    // background-color: #fff;
+    padding-left: 24px;
+    padding-right: 24px;
+    .ad-image {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .coupon-text {
+      width:28px;
+      height:28px;
+      background:#1A1A1C;
+      color: #FFE983;
+      border-radius:8px;
+      font-size:20px;
+      font-weight:400;
+      margin-left: 16px;
+      text-align: center;
+    }
+    .meibao-price{
+      font-size:36px;
+      font-weight:800;
+      color:rgba(239,11,11,1);
+    }
+    .meibao-icon{
+      margin-left: 10px;
+      width: 58px;
+      height: 28px;
+    }
+    .spu-list{
+        // border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .item {
+          background: white;
+          // align-items: center;
+          display: flex;
+          // height: 298px;
+          flex-direction:row;
+          // padding-left: 20px;
+          // padding-right: 20px;
+          .image-container {
+            display: flex;
+            justify-content: center;
+          }
+          .image{
+              // background: #999;
+              width: 198px;
+              height: 198px;
+              border-radius: 10px;
+          }
+          .info-layout{
+              margin-left: 20px;
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              .title{
+                font-size:28px;
+                font-weight:500;
+                color:rgba(51,51,51,1);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+              .return-price{
+                  margin-top: 10px;
+                  font-size:24px;
+                  font-weight:500;
+                  color:rgba(255,152,20,1);
+              }
+              .price-layout{
+                  margin-top: 10px;
+                  display: flex;
+                  justify-content: space-between;
+                  flex-direction: row;
+                  align-items: center;
+                  .left-layout{
+                      align-items: center;
+                      display: flex;
+                      flex-direction: row;
+
+                  }
+                  .market-price{
+                      margin-left: 10px;
+                      text-decoration: line-through;
+                      font-size:20px;
+                      font-weight:400;
+                      color:rgba(153,153,153,1);
+                  }
+              }
+              .button-layout{
+                  margin-top: 20px;
+                  display: flex;
+                  justify-content: flex-end;
+                  flex-direction: row;
+                  .button{
+                      width:168px;
+                      height:50px;
+                      line-height: 50px;
+                      text-align: center;
+                      font-size:24px;
+                      font-weight:500;
+                      color:rgba(238,39,52,1);
+                      background:rgba(250,250,252,1);
+                      border-radius:25px;
+                  }
+              }
+          }
+        }
+    }
+
+    .spu-list1 {
+      flex-direction: column;
+      justify-content: space-between;
+
+      .image-container {
+        width: 198px;
+      }
+      .item:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      .item {
+        .info-layout {
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .spu-list2 {
+      .item {
+        width: 339px;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .image-container {
+          border-radius:10px 10px 0px 0px;
+        }
+
+        .info-layout {
+          margin-left: 0;
+          margin-top: 20px;
+          padding-left: 20rpx;
+          padding-right: 20rpx;
+        }
+      }
+
+      .item:nth-child(2n) {
+        margin-left: 24px;
+      }
+    }
+
+    .spu-list3 {
+      .item {
+        width: 33.33%;
+        flex-direction: column;
+        .info-layout {
+          margin-left: 0;
+          margin-top: 20px;
+          padding-left: 20rpx;
+          padding-right: 20rpx;
+        }
+      }
+    }
+}

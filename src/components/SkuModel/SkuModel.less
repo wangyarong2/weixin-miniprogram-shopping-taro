@@ -1,0 +1,154 @@
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skumodal-container {
+    height: 100%;
+    position: relative;
+    padding: 18px;
+    padding-bottom: 128px;
+    background-color: #fff;
+    .skumodal-middle {
+        overflow-y: auto;
+    }
+
+    .sku-close {
+        text-align:right;
+        position:absolute;
+        right:10rpx;
+        top:10rpx;
+        padding: 20rpx;
+        color:#888;
+    }
+
+    .goods-info {
+        display: flex;
+        margin-bottom: 24px;
+        .sku-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+            margin-right: 32px;
+        }
+
+        .goods-info-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .bao-price{
+                font-weight: bold;
+                font-size:36px;
+                font-weight:800;
+                color:rgba(239,11,11,1);
+            }
+            .sepcial-price{
+                margin-left: 10px;
+                width:64px;
+                height:36px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                line-height: 36px;
+                text-align: center;
+                font-size:24px;
+                font-weight:400;
+                color:rgba(255,233,131,1);
+                background:rgba(28,28,28,1);
+            }
+            .meibao-price{
+                margin-left: 10px;
+                width: 58px;
+                height: 28px;
+              }
+        }
+        .goods-title {
+            align-self: flex-end;
+            font-size:36px;
+            color: #2E333C;
+        }
+    }
+
+    .price-price {
+        color: #EF0B0B;
+
+        .price-text {
+            font-size: 42px;
+        }
+    }
+
+    .spec-stock {
+      font-size: 22px;
+      color: #5C5C5C;
+      margin: 10px 0;
+    }
+
+    .spec-text {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .spec-wrapper-container {
+      .spec-wrapper {
+        margin-bottom: 10px;
+        .spec-title {
+          font-size: 24px;
+          margin-bottom: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .bottom-wrap {
+        position: fixed;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        height:128px;
+        overflow:hidden;
+    }
+    .sku-btn {
+        height:72px;
+        line-height:72px;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        background:#FF6400;
+        border-radius: 44px;
+
+        // &.disabled {
+        //     background:#4385FF;
+        // }
+    }
+
+    .scroll-container {
+        overflow-y: auto;
+        height: 420px;
+    }
+}
+
+.spec {
+  display: inline-block;
+  padding: 12px 32px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius:28px;
+  background-color: #FAFAFC;
+  color: #303030;
+  font-size: 24px;
+  font-weight: 500;
+
+  &.checked {
+      background-color: #FFE0E0;
+      color: #FF6400;
+  }
+
+  &.disabled {
+      color: #D8D8D8;
+      background-color: #FAFAFC;
+  }
+
+}

@@ -1,0 +1,98 @@
+.coupon-item {
+  display: flex;
+  height: 236px;
+  margin: 24px;
+  position: relative;
+  z-index: 1;
+  .coupon-left {
+    width: 216px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    .coupon_shop_name {
+      font-size:24px;
+      font-weight:bold;
+    }
+    .coupon-bg {
+      position: absolute;
+      width: 216px;
+      height: 236px;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .price-content {
+      font-size: 56px;
+    }
+  }
+  .coupon-content {
+    flex: 1;
+    display: flex;
+    padding: 0 24px;
+    background: #fff;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow:0px 4px 16px 0px rgba(0,0,0,0.08);
+    .coupon-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      padding: 24px 0;
+    }
+    .item-name {
+      font-size:28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .item-desc {
+      font-size: 24px;
+      color: #666;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+    }
+    .item-time {
+      font-size: 24px;
+      color: #999;
+    }
+  }
+  .coupon-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    text-align: center;
+    width: 46px;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 1px solid #F4F4FA;
+    &.red {
+      color: #FF6400;
+    }
+  }
+  .coupon-iconbox {
+    padding-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .coupon-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .coupon-select {
+    display: flex;
+    align-items: center;
+  }
+}

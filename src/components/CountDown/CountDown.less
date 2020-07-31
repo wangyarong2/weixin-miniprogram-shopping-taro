@@ -1,0 +1,86 @@
+.count-down-view{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &.red-border {
+      .text {
+        margin-right: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size:24px;
+        color: #fff;
+        border-radius:8px 0px 0px 8px;
+        border: 1px solid #FF6400;
+        background-color: #FF6400;
+      }
+      .countdown-content {
+        font-size: 16px;
+        padding: 0 10px;
+        height: 36px;
+        border-radius:0px 8px 8px 0px;
+        border:1px solid #FF6400;
+        color: #333;
+      }
+      .time {
+        min-width: auto;
+        color: #333;
+        background: transparent;
+      }
+      .day {
+        line-height: 36px;
+        text-align: center;
+        height:36px;
+        color: #333;
+        font-size: 22px;
+        margin-left: 0;
+        margin-right: 10px;
+      }
+      .dot {
+        color: #333;
+        min-width: auto;
+        margin: 0;
+      }
+    }
+    .text{
+        margin-right: 6px;
+        font-size:20px;
+        font-weight:500;
+        color:rgba(0,0,0,1);
+    }
+    .countdown-content {
+      display: flex;
+      align-items: center;
+    }
+    .time{
+        min-width:38px;
+        line-height: 36px;
+        text-align: center;
+        height:36px;
+        background:rgba(124,114,98,1);
+        border-radius:8px;
+        font-size:24px;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+    }
+    .day{
+      line-height: 36px;
+        text-align: center;
+        height:36px;
+        margin-left: 6px;
+        margin-right: 6px;
+        font-size:20px;
+        font-weight:500;
+        color:rgba(124,114,98,1);
+    }
+    .dot{
+        margin-left: 6px;
+        margin-right: 6px;
+        font-size:20px;
+        font-weight:500;
+        color:rgba(124,114,98,1);
+    }
+}

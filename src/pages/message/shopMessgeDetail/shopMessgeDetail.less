@@ -1,0 +1,199 @@
+page{
+    background-color: #F5F3FB;
+}
+.root{
+    .shop-info-container{
+        margin-top: 24px;
+        height: 160px;
+        padding:0px 24px ;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .shop-icon{
+            background: #F4F1F6;
+            width:96px;
+            height:96px;
+            background:rgba(254,254,254,1);
+            box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);
+            border-radius:16px;
+            .image{
+                width:96px;
+                height:96px;
+                border-radius:16px;
+            }
+        }
+        .shop-info{
+            height: 100%;
+            display: flex;
+            flex-grow: 1;
+            padding: 37px 24px 37px 0px  ;
+            flex-direction: column;
+            margin-left: 24px;
+            justify-content: space-between;
+            .name{
+                font-size: 32px;
+                color: #333;
+                font-weight: 500;
+                display: -webkit-box;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+            }
+            .time{
+                color: #999;
+                font-size: 24px;
+
+            }
+        }
+
+    }
+
+    .message-content{
+        padding: 0px 24px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        .line{
+            width: 100%;
+            height: 1px;
+            background: #EEEEEE;
+        }
+        .title{
+            margin-top: 32px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: 500;
+            color: #333;
+            font-size: 28px;
+        }
+        .content{
+            margin-top: 16px;
+            color: #666;
+            font-size: 28px;
+        }
+        .content-image{
+            width: 190px;
+            margin: 16px 0px;
+            height: 190px;
+            border-radius: 24px;
+            background-color: #F5F3FB;
+        }
+
+    }
+  .add-leave-title{
+      display: flex;
+      height: 88px;
+      margin: 0px 24px;
+      padding-top: 16px;
+      box-sizing: border-box;
+      flex-direction: row;
+      align-items: center;
+      .title{
+         font-size: 28px;
+         color: #333;
+         flex-grow: 1;
+         font-weight: 500;
+      }
+      .count{
+          font-size: 24px;
+          color: #333;
+      }
+      .total{
+        font-size: 24px;
+        color: #C0C0C0;
+      }
+
+  }
+  .search-input{
+      min-height: 240px;
+      margin: 0px 24px ;
+      padding: 24px;
+      width: 702px;
+
+      box-sizing: border-box;
+      background-color: white;
+      border-radius: 24px;
+  }
+  .placeholder-input{
+
+    font-size: 28px;
+    color: #C0C0C0;
+  }
+  .commit{
+      background-color: #FF6400;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      border-radius: 40px;
+      margin: 32px 24px 0px  24px;
+  }
+  .leave-list-container{
+      margin-top: 23px;
+      width: 100%;
+      background-color: white;
+      border-radius: 24px 24px 0px 0px ;
+      padding: 0px 24px 30px 24px ;
+      box-sizing: border-box;
+
+      .item-row{
+           padding: 32px 0px ;
+           box-sizing: border-box;
+           display: flex;
+           position: relative;
+           flex-direction: row;
+          .name-row{
+              color: #333;
+              margin-right: 24px;
+              white-space: nowrap;
+              font-weight: 500;
+              font-size: 32px;
+          }
+          .content-row{
+            color: #666;
+            font-size: 28px;
+          }
+          .line{
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            z-index: 99;
+            background: #EEEEEE;
+          }
+
+      }
+      .item-column{
+          display: flex;
+          flex-direction: column;
+          padding: 32px 0px ;
+          box-sizing: border-box;
+          position: relative;
+       .name-column{
+           color: #333;
+           margin-right: 24px;
+           font-weight: 500;
+           font-size: 32px;
+       }
+       .content-column{
+           margin-top: 16px;
+           color: #666;
+           font-size: 28px;
+       }
+       .line{
+        width: 100%;
+        height: 1px;
+        z-index: 99;
+        position: absolute;
+        bottom: 0;
+        background: #EEEEEE;
+      }
+   }
+  }
+}

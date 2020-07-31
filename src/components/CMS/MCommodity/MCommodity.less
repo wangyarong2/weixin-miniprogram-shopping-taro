@@ -1,0 +1,197 @@
+.commondity-container {
+  // display: flex;
+  // background-color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  .title-box {
+    padding-bottom: 12px;
+    background: #fff;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    overflow: hidden;
+  }
+  .ad-image {
+    // margin-bottom: 30px;
+    width: 100%;
+  }
+  .coupon-text {
+    width: 28px;
+    height: 28px;
+    background: #1a1a1c;
+    color: #ffe983;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 16px;
+    text-align: center;
+  }
+  .spu-list {
+    // border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .item {
+      background: white;
+      // align-items: center;
+      display: flex;
+      // height: 298px;
+      flex-direction: row;
+      // padding-left: 20px;
+      // padding-right: 20px;
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+      .image {
+        // background: #999;
+        width: 198px;
+        height: 198px;
+        border-radius: 10px;
+      }
+      .info-layout {
+        margin-left: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 28px;
+          font-weight: 500;
+          color: rgba(51, 51, 51, 1);
+        }
+        .return-price {
+          margin-top: 10px;
+          font-size: 24px;
+          font-weight: 500;
+          color: rgba(255, 152, 20, 1);
+        }
+        .price-layout {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          .left-layout {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+          }
+          .market-price {
+            margin-left: 10px;
+            text-decoration: line-through;
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+          }
+        }
+        .button-layout {
+          margin-top: 20px;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: row;
+          .button {
+            width: 168px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(238, 39, 52, 1);
+            background: rgba(250, 250, 252, 1);
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .spu-list1 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20rpx;
+    background: #fff;
+
+    .image-container {
+      width: 198px;
+    }
+    .item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .item {
+      .info-layout {
+        justify-content: space-between;
+
+        .title {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .spu-list2 {
+    .item {
+      width: 339px;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      overflow: hidden;
+
+      .image {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .info-layout {
+        margin-left: 0;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        .title {
+          display: -webkit-box;
+          word-break: break-all;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .item:nth-child(2n) {
+      margin-left: 24px;
+    }
+  }
+
+  .spu-list3 {
+    border-bottom-left-radius: 24rpx;
+    border-bottom-right-radius: 24rpx;
+    overflow: hidden;
+    background: #fff;
+    padding-left: 32rpx;
+    padding-right: 32rpx;
+    justify-content: space-around;
+    .item {
+      width: 190px;
+      flex-direction: column;
+      margin-bottom: 14px;
+      .image {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .info-layout {
+        margin-left: 0;
+        margin-top: 20px;
+        padding-bottom: 20rpx;
+        .title {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

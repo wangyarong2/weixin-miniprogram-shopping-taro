@@ -1,0 +1,58 @@
+.item {
+    height: 235px;
+    width : 328px;
+    margin-top: 20px;
+    background: url(../../../../assets/images/shop/shop_detail_coupon_bg.png) no-repeat top center  ;
+    background-size: cover;
+    display: flex;
+    padding: 0px 16px ;
+    box-sizing: border-box;
+    flex-direction: row;
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 216px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        .name{
+            font-size: 28px;
+            color: white;
+            font-weight: 500;
+            width: 168px;
+            display: -webkit-box;
+            word-break: break-all;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:1;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price-content{
+            font-size: 48px;
+        }
+        .rule{
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+
+
+    }
+    .action{
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text{
+           width: 25px;
+           font-size: 24px;
+           font-weight: 500;
+           color: #999;
+           &.get{
+           color: #FF6400;
+           }
+        }
+    }
+}

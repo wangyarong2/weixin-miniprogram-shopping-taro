@@ -1,0 +1,64 @@
+.address-layout{
+    min-height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    .name-layout{
+        max-width: 100px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .name{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size:28px;
+            font-weight:800;
+            color:rgba(51,51,51,1);
+        }
+        .default{
+            margin-top: 10px;
+            background: #FF6400;
+            text-align: center;
+            padding: 0px 5px;
+            font-size:20px;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+        }
+    }
+    .info-layout{
+        margin-right: 32px;
+        margin-left: 50px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .phone{
+            font-size:28px;
+            font-weight:800;
+            color:rgba(51,51,51,1);
+        }
+        .address{
+            margin-top: 10px;
+            font-size:24px;
+            font-weight:500;
+            color:rgba(153,153,153,1);
+        }
+    }
+
+    .icon-layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .edit{
+            font-size:20px;
+            font-weight:500;
+            color:rgba(0,0,0,1);
+        }
+    }
+
+}

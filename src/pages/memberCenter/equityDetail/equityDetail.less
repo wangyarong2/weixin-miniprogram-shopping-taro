@@ -1,0 +1,129 @@
+page{
+    background: #fafafc;
+}
+.equity-page{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .list-item {
+      padding: 32px;
+      border-radius:20px;
+      background-color: #fff;
+
+      .item-name {
+        color: #333;
+        font-size:24px;
+        font-weight:bold;
+      }
+      .item-num {
+        color: #333;
+        font-size:24px;
+      }
+
+      .small-text {
+        font-size:22px;
+        color: #666;
+      }
+      .item-image {
+        margin: 48px auto;
+        max-width: 100%;
+      }
+      .item-btn {
+        margin: 0 auto;
+        width:586px;
+        height:72px;
+        font-size:26px;
+        font-weight:800;
+        color: #fff;
+        background:#FF6400;
+        border-radius:36px;
+      }
+    }
+}
+
+
+.dialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 998;
+  background: rgba(0,0,0,0.5);
+  .content-container {
+    position: fixed;
+    left: 50%;
+    bottom: 60%;
+    margin-bottom:-180px;
+    margin-left: -45%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 20px;
+  }
+ .content-main {
+   z-index: 999;
+   height: 300px;
+   .title{
+       font-weight: bold;
+       color: #333333;
+       font-size: 40px;
+   }
+   .content{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 32px;
+      font-size:26px;
+      font-weight:500;
+      color:rgba(51,51,51,1);
+   }
+   .btn{
+      margin-top: 48px;
+      width:480px;
+      height:70px;
+      line-height: 70px;
+      text-align: center;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 26px;
+      background:rgba(238,39,52,1);
+      border-radius:30px;
+   }
+ }
+
+ .dialog-confirm {
+   z-index: 1000;
+ }
+ .confirm-main {
+     color: #333;
+     z-index: 1001;
+    .content-tip {
+      padding: 50px 100px 80px;
+      font-size:26px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    .btn-container {
+      width: 100%;
+      height: 80px;
+    }
+    .confrim-btn {
+      flex: 1;
+      height: 100%;
+      font-size:28px;
+    }
+    .btn-cancel {
+      border-bottom-left-radius: 20px;
+    }
+    .btn-confirm {
+      background-color: #FF6400;
+      border-bottom-right-radius: 20px;
+      color: #fff;
+    }
+ }
+}

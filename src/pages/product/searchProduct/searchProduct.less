@@ -1,0 +1,126 @@
+page {
+  background: #f4f4fa;
+}
+.search-page {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  .search-root {
+    background: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    align-items: center;
+    height: 88px;
+    padding-top: 8px;
+    flex-direction: row;
+    justify-content: center;
+    .search-layout {
+      flex: 1;
+      height: 60px;
+      padding-left: 20px;
+      background: #f4f4fa;
+      align-items: center;
+      display: flex;
+      margin-left: 20px;
+      margin-right: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 30px;
+      .search-input {
+        padding-left: 25px;
+        padding-right: 25px;
+        flex: 1;
+        font-size: 28px;
+        font-weight: 500;
+        color: #333;
+      }
+      .placeholder-input {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(192, 192, 192, 1);
+      }
+      .search-clear {
+        width: 33px;
+        height: 33px;
+      }
+    }
+    .search-text {
+      margin-right: 20px;
+      font-size: 28px;
+      font-weight: 500;
+      color: #ff6400;
+    }
+  }
+
+  .bottom-layout {
+    display: flex;
+    flex-direction: column;
+    .sort-layout {
+      position: fixed;
+      background: white;
+      z-index: 99;
+      width: 100%;
+      top: 88px;
+
+      .tools {
+        position: absolute;
+        width: 100vw;
+      }
+      .quick-search {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding-bottom: 20px;
+        background-color: #fff;
+
+        .quick-search-item {
+          padding: 46px 20px 0 46px;
+
+          .flex-space-between {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .search-title {
+              font-size: 30px;
+              font-weight: 500;
+              color: #333;
+            }
+            .delete-layout {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              .delete-all {
+                margin-left: 5px;
+                font-size: 22px;
+                font-weight: 500;
+                color: rgba(153, 153, 153, 1);
+              }
+            }
+          }
+          .list-container {
+            margin-top: 30px;
+            padding-left: 10rpx;
+            .item-text {
+              padding: 8px 20px;
+              background-color: #f9f9f9;
+              color: #999;
+              display: inline-block;
+              font-size: 24px;
+              margin-right: 20px;
+              margin-bottom: 30px;
+              border-radius: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.at-drawer__content {
+  border-radius: 16px 0 0 16px;
+}

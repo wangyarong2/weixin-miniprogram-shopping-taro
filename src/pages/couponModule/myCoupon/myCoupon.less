@@ -1,0 +1,45 @@
+.tab-container {
+  height: 88px;
+  background: #fff;
+  .item {
+    position: relative;
+    flex: 1;
+    font-size: 28px;
+    font-weight: 500;
+    height: 100%;
+    text-align: center;
+    &.selected {
+      color: #FF6400;
+      font-weight: bold;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background:#FF6400;
+        border-radius:30px;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+  }
+}
+
+.bottom-container {
+  // height: 100px;
+  padding-top: 10px;
+}
+
+.bottom-btn {
+  width:702px;
+  height:80px;
+  margin: 0 auto;
+  line-height:80px;
+  color: #fff;
+  background:#FF6400;
+  border-radius:40px;
+  text-align: center;
+  font-size: 28px;
+}

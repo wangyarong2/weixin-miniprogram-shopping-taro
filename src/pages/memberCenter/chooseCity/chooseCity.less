@@ -1,0 +1,82 @@
+page{
+    background: #fafafc;
+}
+.choose-city-page{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    .city-left{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        .head{
+            padding-left: 35px;
+            background:#fafafc;
+            height: 60px;
+            text-align: left;
+            line-height: 60px;
+        }
+        .head-layout{
+            .head{
+                padding-left: 35px;
+                background:#fafafc;
+                height: 60px;
+                text-align: left;
+                line-height: 60px;
+            }
+            .city-layout{
+                padding-left: 35px;
+                padding-right: 35px;
+                display: flex;
+                flex-direction: column;
+                .city-name{
+                    text-align: left;
+                    line-height: 100px;
+                    height:100px;
+                    background:rgba(255,255,255,1);
+                }
+                .line{
+                    height: 1rpx;
+                    background: #EEEEEE;
+                }
+            }
+        }
+
+        .current-city-layout{
+            padding-left: 35px;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .current-city{
+                font-size:36px;
+                font-weight:800;
+                color:rgba(238,35,37,1);
+            }
+            .gps-text{
+                margin-left: 20px;
+                font-size:26px;
+                font-weight:500;
+                color:rgba(171,171,171,1);
+            }
+        }
+
+
+    }
+    .city-right{
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        top: 50%;
+        right: 28px;
+        transform: translateY(-50%);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        .word{
+            font-size:26px;
+            font-weight:500;
+            color:rgba(102,102,102,1);
+        }
+    }
+}

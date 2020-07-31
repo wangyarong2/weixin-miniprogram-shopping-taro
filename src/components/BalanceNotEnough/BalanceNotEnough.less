@@ -1,0 +1,75 @@
+.balance-not-enough-dialog{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dialog-content{
+        width: 560px;
+        height: 546px;
+        display: flex;
+        flex-direction: column;
+        .head-image{
+            width: 560px;
+            height: 160px;
+        }
+        .content-layout{
+            background: white;
+            width: 560px;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 386px;
+            display: flex;
+            flex-direction: column;
+            .notice{
+                font-size: 28px;
+                width: 560px;
+                height: 80px;
+                text-align: center;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .confirm{
+                margin-top: 20px;
+                text-align: center;
+                width: 480px;
+                height: 60px;
+                line-height: 60px;
+                background: #FF6400;
+                border-radius: 30px;
+                color: white;
+                font-size: 24px;
+                height: 60px;
+            }
+            .ask{
+                margin-top: 20px;
+                text-align: center;
+                width: 480px;
+                height: 60px;
+                line-height: 60px;
+                background: #fafafc;
+                border-radius: 30px;
+                color: #FF6400;
+                font-size: 24px;
+                height: 60px;
+            }
+            .cancel{
+                margin-top: 20px;
+                text-align: center;
+                width: 480px;
+                height: 60px;
+                line-height: 60px;
+                background: #fafafc;
+                border-radius: 30px;
+                color: #999999;
+                font-size: 24px;
+                height: 60px;
+            }
+        }
+    }
+}

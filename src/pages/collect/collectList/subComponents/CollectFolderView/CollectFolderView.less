@@ -1,0 +1,41 @@
+.listing-list {
+  overflow: auto;
+  .item {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 339px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    .img {
+      width: 339px;
+      height: 292px;
+      border-radius: 16px 16px 0px 0px;
+    }
+    .name {
+      color: #1e1e28;
+      height: 42px;
+      margin: 16px 16px 0 16px;
+      line-height: 42px;
+      font-size: 28px;
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-weight: 500;
+    }
+    .count {
+      width: 226px;
+      margin: 10px 16px 24px 16px;
+      height: 42px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999;
+      line-height: 42px;
+    }
+  }
+}

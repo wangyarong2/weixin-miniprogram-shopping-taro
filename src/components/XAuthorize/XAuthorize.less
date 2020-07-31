@@ -1,0 +1,83 @@
+.box-container {
+  position: relative;
+}
+
+.btn-transparent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-sizing: border-box;
+
+  &::after {
+      border: none;
+  }
+}
+
+.balance-not-enough-dialog{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dialog-content{
+      width: 560px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      background: white;
+      border-radius: 20px;
+      .close-layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .content-layout{
+          margin-top: 40px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          .notice{
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 60px;
+            font-size:26px;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+          }
+          .input{
+            margin-bottom: 100px;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            line-height: 60px;
+            background: #fafafc;
+            border-radius: 30px;
+            font-size: 24px;
+          }
+          .confirm{
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+            background: #FF6400;
+            border-radius: 30px;
+            color: white;
+            font-size: 24px;
+        }
+      }
+  }
+}

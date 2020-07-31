@@ -1,0 +1,180 @@
+page{
+  background: #fafafc;
+}
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.specialSale-container {
+  border-radius:24px;
+  background: #fff;
+}
+
+.more-container {
+  padding: 24px;
+  padding-bottom: 0;
+  .more-title {
+    font-size:28px;
+    font-weight: bold;
+  }
+  .more-text {
+    margin-right: 8px;
+    font-size:24px;
+    color: #999;
+  }
+}
+
+.specialSale-list-page{
+  display: flex;
+  flex-direction: column;
+    &.column {
+      // width: 33%;
+      flex-direction: row;
+      background: #fff;
+      .item{
+        .top-layout {
+          flex-direction: column;
+          .image {
+            width: 190px;
+            height: 190px;
+          }
+          .info-layout {
+            margin-left: 0;
+            padding-top: 6px;
+            padding-bottom: 16px;
+            width: 100%;
+
+            .price-layout {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+    .item{
+      // height: 329px;
+      padding: 24px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+
+      .top-layout {
+          height: 230px;
+          align-items: center;
+          display: flex;
+          position: relative;
+          flex-direction:row;
+          .image{
+              background: #999;
+              width: 230px;
+              height: 230px;
+              border-radius: 10px;
+          }
+          .info-layout{
+              height: 230px;
+              margin-left: 20px;
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .title{
+                  font-size:28px;
+                  font-weight:bold;
+                  color:#333;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp:2;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+              }
+              .tag-layout{
+                  margin: 8px 0;
+                  display: flex;
+                  flex-direction: row;
+                  .tags{
+                    height:36px;
+                    line-height:36px;
+                    padding: 0 8px;
+                    text-align: center;
+                    margin-right: 8px;
+                    border-radius:8px;
+                    border:1px solid #FF6400;
+                    color: #FF6400;
+                    font-size:24px;
+                  }
+              }
+              .return-price{
+                  margin-top: 10px;
+                  font-size:24px;
+                  font-weight:500;
+                  color:rgba(255,152,20,1);
+              }
+              .price-layout{
+                  margin-top: 10px;
+                  display: flex;
+                  align-items: center;
+                  .left-layout{
+                      align-items: center;
+                      display: flex;
+                      flex-direction: row;
+                  }
+              }
+              .market-price{
+                text-decoration: line-through;
+                font-size:20px;
+                font-weight:400;
+                color:rgba(153,153,153,1);
+              }
+              .special-text {
+                margin-left: 8px;
+                padding: 2px 12px;
+                background-color: #1C1C1C;
+                color: #FFE983;
+                font-size:24px;
+                border-radius: 0 20px 20px 20px;
+              }
+              .button-layout{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .button-buy{
+                      width:132px;
+                      height:48px;
+                      line-height: 48px;
+                      text-align: center;
+                      font-size:28px;
+                      color: #fff;
+                      background:linear-gradient(90deg,rgba(248,79,100,1) 0%,rgba(252,55,17,1) 100%);
+                      border-radius:32px;
+                  }
+              }
+          }
+      }
+      .head-layout{
+          height: 75px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .sale-end {
+            width:88px;
+            height:36px;
+            line-height: 36px;
+            text-align: center;
+            font-size:24px;
+            font-weight:500;
+            color: #fff;
+            background: #FF6400;
+            border-radius:8px;
+          }
+          .sale-count{
+              font-size:24px;
+              font-weight:500;
+              color:#333;
+          }
+      }
+  }
+
+}

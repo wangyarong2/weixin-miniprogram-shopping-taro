@@ -1,0 +1,104 @@
+.popup_container {
+  display: flex;
+  height: 918px;
+  flex-direction: column;
+  .popup_title {
+    height: 110px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    z-index: 3;
+    padding-top: 42px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: #1e1e28;
+    font-weight: bold;
+    background-color: #fff;
+    .pupup_close {
+      position: absolute;
+      right: 0;
+      height: 58px;
+      top: 0;
+      padding: 36px 24px 0 24px;
+    }
+  }
+  .scroll {
+    overflow-y: auto;
+    background: white;
+    padding-top: 84px;
+    height: 718px;
+
+    .goods-list {
+      margin: 0 40px;
+      padding-bottom: 32px;
+      .title {
+        font-size: 28px;
+        color: #1e1e28;
+      }
+
+      .image-list {
+        padding: 29px 0 24px 0px;
+
+        .sku-image {
+          height: 160px;
+          margin-right: 30px;
+          width: 160px;
+        }
+      }
+
+      .select-container {
+        display: flex;
+        flex-direction: row;
+        color: #333;
+
+        .action {
+          text-align: center;
+          line-height: 64px;
+          width: 144px;
+          height: 64px;
+          font-size: 24px;
+          background: rgba(244, 244, 250, 1);
+          border-radius: 32px;
+          margin-right: 32px;
+
+          &.selected {
+            background: rgba(255, 218, 194, 1);
+            color: #ff6400;
+          }
+
+          &.disable {
+            color: #999999;
+          }
+        }
+      }
+
+      &:last-child {
+        border-top: 1px #f4f4fa solid;
+        padding-top: 32px;
+      }
+    }
+  }
+  .button-container {
+    position: fixed;
+    background: white;
+    bottom: 0;
+    height: 98px;
+    .button {
+      width: 702px;
+      height: 74px;
+      text-align: center;
+      font-size: 28px;
+      color: white;
+      line-height: 74px;
+      margin-left: 24px;
+      align-items: center;
+      background: linear-gradient(270deg, rgba(255, 100, 0, 1) 0%, rgba(255, 162, 0, 1) 100%);
+      border-radius: 40px;
+    }
+  }
+}
